@@ -1,5 +1,7 @@
 import { connectDB } from "@/lib/db";
 
+export const dynamic = "force-dynamic";
+
 async function getLast7Days(chatId: string) {
   await connectDB();
   const { Analytics } = await import("@/lib/models");

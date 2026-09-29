@@ -1,5 +1,7 @@
 import { connectDB } from "@/lib/db";
 
+export const dynamic = "force-dynamic";
+
 async function getTickets() {
   await connectDB();
   const { Ticket } = await import("@/lib/models");
